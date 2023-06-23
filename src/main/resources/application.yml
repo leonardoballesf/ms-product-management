@@ -1,0 +1,20 @@
+server:
+  port: 5000
+application:
+  http-client:
+    mock-service:
+      url: http://localhost:3001
+info:
+  project:
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+    type: microservice
+    artifact-id: '@project.artifactId@'
+    app-group: INTERVIEW
+spring:
+  application:
+    name: 'ms-product-management-v1'
+logging.level:
+  com.interview.service.msproductmanagement: TRACE
+  io.github.resilience4j: WARN
